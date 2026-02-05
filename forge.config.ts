@@ -17,7 +17,7 @@ const config: ForgeConfig = {
         ],
     },
     makers: [
-        new MakerZIP({}, ['darwin']),
+        new MakerZIP(), // 所有平台都生成 ZIP
         new MakerDeb({}),
     ],
 }
