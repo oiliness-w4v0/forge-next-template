@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    // Language and Environment
+    "target": "ES2020",
+    "jsx": "preserve",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+
+    // Modules
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+
+    // Type Checking
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noUncheckedSideEffectImports": true,
+
+    // Emit
+    "declaration": true,
+    "declarationMap": true,
+    "noEmit": true,
+    "sourceMap": true,
+
+    // Interop Constraints
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
+    // Completeness
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "*.ts",
+    "*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "out",
+    ".vite"
+  ]
+}

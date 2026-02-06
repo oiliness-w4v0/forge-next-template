@@ -1,9 +1,19 @@
+import vue from '@vitejs/plugin-vue'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-    base: './',
-    build: {
-        outDir: './.vite/build/renderer',
-        emptyOutDir: true
-    }
+  plugins: [vue()],
+  base: './',
+  build: {
+    outDir: './.vite/build/renderer',
+    emptyOutDir: true,
+  },
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
+  server: {
+    port: 3010,
+  },
 })
